@@ -1,7 +1,7 @@
 # Create env variable
 
 ```
-vim .env
+nano .env
 ```
 
 ```
