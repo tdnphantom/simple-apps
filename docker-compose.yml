@@ -1,0 +1,13 @@
+services:
+  apps:
+    build: ./apps
+    container_name: ct-apps-puja
+    image: 7skiesid/apps-puja
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - apps-data:/app/public/images
+
+volumes:
+  apps-data:
