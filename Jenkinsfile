@@ -20,6 +20,7 @@ pipeline {
             steps {
                 echo "Tsetingni" 
                 sh '''
+                cd apps
                 npm test
                 npm run test:coverage
                 '''
