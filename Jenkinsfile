@@ -16,6 +16,15 @@ pipeline {
             }
         }
 
+          stage('Copy .env') {
+            steps {
+                echo ".env MENTIONED RRRAHHHHH" 
+                sh '''
+                cp /root/simple-apps/apps/.env apps/
+                '''
+            }
+        }
+
         stage('Tseting') {
             steps {
                 echo "Tsetingni" 
