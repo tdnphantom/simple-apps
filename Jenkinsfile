@@ -16,7 +16,7 @@ pipeline {
             }
         }
 
-          stage('Copy .env') {
+          stage('Coyp .env') {
             steps {
                 echo ".env MENTIONED RRRAHHHHH" 
                 sh '''
@@ -67,6 +67,9 @@ pipeline {
         stage('Pulibsh') {
             steps {
                 echo "Pbulish" 
+                sh '''
+                docker compose push
+                '''
             }
         }
     }
