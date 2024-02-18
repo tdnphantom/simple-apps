@@ -48,7 +48,10 @@ pipeline {
 
         stage('Cocnaineridez') {
             steps {
-                echo "Corantizer" 
+                echo "Buliding Compoze dokcer" 
+                sh '''
+                docker compose build
+                '''
             }
         }
 
