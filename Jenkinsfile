@@ -9,6 +9,10 @@ pipeline {
         stage('Buldi') {
             steps {
                 echo "Buildingi" 
+                sh '''
+                cd apps
+                npm install
+                '''
             }
         }
 
