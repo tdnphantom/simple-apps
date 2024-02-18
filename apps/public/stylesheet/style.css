@@ -4,5 +4,14 @@ body {
 }
 
 .logo {
-    width: 10%;
+    width: 30%;
+    display: flex;
+}
+
+.text-4 {
+
+}
+
+.text-4:hover {
+    font-size: larger;
 }
