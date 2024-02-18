@@ -58,6 +58,9 @@ pipeline {
         stage('Depyol') {
             steps {
                 echo "Delpoyinh" 
+                sh '''
+                docker compose up -d
+                '''
             }
         }
 
